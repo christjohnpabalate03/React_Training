@@ -4,14 +4,17 @@ import MainNav from "./mainfolder/Mainnav";
 
 export default function App() {
   return (
-    <div>
+    <div style={{ display: "block" }}>
       <div>
         <ButtonAppBar />
       </div>
+
       <div>
-        <div>
-          <MainNav />
-        </div>
+        <MainNav />
+      </div>
+
+      <div style={{ marginTop: "150px" }}>
+        <h1>Hello Clients</h1>
       </div>
     </div>
   );

@@ -1,24 +1,24 @@
 ::before,
 ::after {
-  box-sizing: border-box;
+  box-sizing: content-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background: rgb(236, 236, 236);
+  background: rgb(255, 255, 255);
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  position: right;
-  width: 100;
-  height: 50px;
-  background: #fffefe;
+  position: static;
+  width: 500rem;
+  height: 60px;
+  background: #ffffff;
   margin: 1px auto 0;
   word-break: break-all;
-  border: 1px solid rgba(0, 0, 0, 0.274);
+  border: 1px rgba(0, 0, 0, 0.274);
 }
 
 .bloc-onglets {
@@ -27,21 +27,21 @@ body {
 .tabs {
   padding: 10px;
   text-align: center;
-  width: 10%;
-  background: rgba(128, 128, 128, 0.075);
+  width: 11.5rem;
+  background: rgba(255, 255, 255, 0.075);
   cursor: pointer;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  border-bottom: 1px solid rgba(66, 65, 65, 0.274);
   box-sizing: content-box;
-  position: relative;
+  position: static;
   font-family: Arial, Helvetica, sans-serif;
   font-size: medium;
 }
 .tabs:not(:last-child) {
-  border-right: 1px solid rgba(238, 187, 187, 0.274);
+  border-right: 1px solid rgba(255, 255, 255, 0.137);
 }
 
 .active-tabs {
-  background: rgb(255, 255, 255);
+  background: rgb(245, 247, 247);
   border-bottom: 1px solid transparent;
 }
 
@@ -53,8 +53,8 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: calc(100% + 2px);
-  height: 5px;
-  background: rgb(216, 223, 238);
+  height: 2px;
+  background: rgb(255, 255, 255);
 }
 
 button {
@@ -64,20 +64,65 @@ button {
   flex-grow: 1;
 }
 .contenu {
-  background: white;
-  padding: 20px;
+  background: rgb(255, 255, 255);
+  padding: 25px;
   width: 100%;
-  height: 50%;
+
   display: none;
 }
-.contenu h2 {
-  padding: 0px 0 5px 0px;
+.Todo {
+  display: flex;
+  width: 51rem;
+  border-style: groove;
+  margin-top: -25px;
+  margin-left: -25px;
+  border-top-style: hidden;
+  background: rgb(245, 247, 247);
+  height: 150px;
 }
+.sales {
+  display: flex;
+  width: 51rem;
+  border-style: groove;
+  margin-top: -25px;
+  margin-left: -25px;
+  border-top-style: hidden;
+  background: rgb(245, 247, 247);
+  height: 150px;
+}
+.visitor {
+  display: flex;
+  width: 51rem;
+  border-style: groove;
+  margin-top: -25px;
+  margin-left: -25px;
+  border-top-style: hidden;
+  background: rgb(245, 247, 247);
+  height: 150px;
+}
+.admin {
+  display: flex;
+  width: 51rem;
+  border-style: groove;
+  margin-top: -25px;
+  margin-left: -25px;
+  border-top-style: hidden;
+  background: rgb(245, 247, 247);
+  height: 150px;
+}
+.report {
+  width: 150px;
+  margin-left: 30px;
+}
+.report-divider {
+  border-left-style: groove;
+}
+
 .contenu hr {
   width: 100px;
   height: 2px;
   background: #222;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 .contenu p {
   width: 50%;
@@ -85,4 +130,36 @@ button {
 }
 .active-contenu {
   display: block;
+}
+.changepassword {
+  margin-left: 30px;
+}
+.invoice {
+  margin-left: 30px;
+}
+.logout {
+  margin-left: 30px;
+}
+.customer {
+  margin-left: 30px;
+}
+.user {
+  margin-left: 300px;
+  margin-top: -30px;
+}
+.main {
+  margin-left: 300px;
+  margin-top: 18px;
+}
+.others {
+  margin-left: 80px;
+  margin-top: -5px;
+}
+.visitor-home {
+  margin-left: 300px;
+  margin-top: -30px;
+}
+.select {
+  margin-left: 10px;
+  margin-top: -30px;
 }

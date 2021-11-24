@@ -1,6 +1,9 @@
 import { useState } from "react";
 import "./Mainnav.css";
-
+import HomeNavigationTab from "../homefolder/Homenav";
+import Sales from "../salesfolder/sales";
+import VisitorManagementTab from "../visitorfolder/visitormanagetab";
+import Admintab from "../admin/admintab";
 function MainNav() {
   const [toggleTabs, setToggleTabs] = useState(1);
 
@@ -42,32 +45,24 @@ function MainNav() {
           <div
             className={toggleTabs === 1 ? "contenu active-contenu" : "contenu"}
           >
-            <h2>Homepage</h2>
-
-            <p>This is the HOme Page</p>
+            <HomeNavigationTab />
           </div>
 
           <div
             className={toggleTabs === 2 ? "contenu active-contenu" : "contenu"}
           >
-            <h2>Sales </h2>
-
-            <p>This is the Sales Page</p>
+            <Sales />
           </div>
 
           <div
             className={toggleTabs === 3 ? "contenu active-contenu" : "contenu"}
           >
-            <h2>Visitor Management </h2>
-
-            <p>This is the Visitor Mangement page</p>
+            <VisitorManagementTab />
           </div>
           <div
             className={toggleTabs === 4 ? "contenu active-contenu" : "contenu"}
           >
-            <h2>Administration</h2>
-
-            <p>This is the Administration Page</p>
+            <Admintab />
           </div>
         </div>
       </div>

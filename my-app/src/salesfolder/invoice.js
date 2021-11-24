@@ -1,8 +1,8 @@
 import React from "react";
-import ListIcon from "@mui/icons-material/List";
+import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import Button from "@mui/material/Button";
 
-function TodoContent() {
+function Invoice() {
   return (
     <div>
       <Button
@@ -13,15 +13,11 @@ function TodoContent() {
           marginLeft: "30px",
         }}
       >
-        <div>
-          <ListIcon fontSize="large" />
-        </div>
-        <div>
-          <h4 style={{ marginTop: "-10px" }}>Todo</h4>
-        </div>
+        <DescriptionOutlinedIcon sx={{ fontSize: 35 }} />
+        <h4 style={{ marginTop: "-10px" }}>Invoice</h4>
       </Button>
     </div>
   );
 }
 
-export default TodoContent;
+export default Invoice;
