@@ -63,7 +63,6 @@ export default function MenuListComposition() {
           onClick={handleToggle}
         >
           <div>
-            {" "}
             <SettingsOutlinedIcon sx={{ fontSize: 35 }} />
           </div>
           <div>
